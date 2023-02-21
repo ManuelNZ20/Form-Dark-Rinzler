@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Dark</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <div class="header-form">
+            <figure>
+                <img class="guardian" src="../img/rinzler.jpg" alt="">
+            </figure>
+        </div>
+        <div class="container">
+            <h1 class="saludo">Hola Usuario</h1>
+            <p>Registrate</p>
+            <div class="social-buttons">
+                <button class="google-btn">
+                    <img class="logo-google" src="../img/google.svg" alt="google-logo">
+                    <span>Registrate en google</span>
+                </button>
+                <button class="twitter-btn">
+                    <picture><img class="logo-twitter" src="../img/16829954391551953708.svg" alt="twitter-logo">
+                    </picture>
+                    <span></span>
+                </button>
+            </div>
+            <div class="form">
+                <form action="" method="">
+                    <div class="section-user">
+                        <label for="name">Name
+                            <input id="name" type="text">
+                        </label>
+                        <label for="username">Username
+                            <input id="username" type="text">
+                        </label>
+                    </div>
+                    <label for="email">Email
+                        <input id="email" type="email" name="email">
+                    </label>
+                    <label for="password">Password
+                        <input id="password" type="password" name="password" placeholder="6+ character">
+                    </label>
+                    <label class="conditions" for="conditions">
+                        <input type="checkbox" name="conditions" id="conditions">
+                        Aceptas los terminos y condiciones que te impone la red usuario.
+                    </label>
+                    <button id="submit" type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

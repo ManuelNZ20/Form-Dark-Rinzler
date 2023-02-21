@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+body {
+  background: url("../img/font-Tron.jpg") center fixed;
+  background-size: cover;
+}
+
+.header-form {
+  width: 20%;
+  float: left;
+  margin-left: 20%;
+}
+.guardian {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  opacity: 0.99;
+  border-radius: .5em 0 0 .5em;
+  opacity: .9;
+}
+.container {
+  margin: 3em auto;
+  max-width: 60vw;
+  height: 80vh;
+  background-color: #161717dc;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  padding: 1% 1.5%;
+  border-radius: 0 1.5% 1.5% 0;
+}
+
+.container .saludo {
+  margin: 2% auto 5%;
+}
+.social-buttons {
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+  height: 10%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social-buttons button {
+  height: 3.15em;
+  border: none;
+  border-radius: 0.1em;
+  cursor: pointer;
+}
+
+.social-buttons .google-btn {
+  background-color: rgb(66, 133, 244);
+  padding: 0em 0.9em 0em 0.15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.social-buttons .google-btn .logo-google {
+  width: 3em;
+  height: 2.8em;
+  background-color: white;
+  padding: 0.6em 0;
+  border-radius: 0.1em 0 0 0.1em;
+}
+
+.social-buttons .google-btn span {
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.social-buttons .twitter-btn {
+  background-color: rgb(224, 222, 222);
+}
+
+.social-buttons .twitter-btn picture .logo-twitter {
+  height: 90%;
+  padding: 0.8em;
+}
+
+.form form {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: rgb(9, 203, 203);
+}
+.form form .section-user {
+  display: flex;
+  gap: 5%;
+}
+
+.form form .section-user input {
+  display: block;
+}
+.form form label input:not(#conditions),
+.form form label,
+.form form button {
+  width: 100%;
+  height: 5vh;
+  border: none;
+}
+.form form label input {
+  background-color: #212121;
+  outline: none;
+  font-size: 1em;
+  padding: 0.5em;
+  color: #fcfbfcb3;
+  border-radius: 0.3em;
+}
+.form form label input:hover {
+  background-color: #454045;
+}
+.form form label input:not(#conditions):focus {
+  border:.05em solid rgb(8, 193, 193);
+  box-shadow: 0 0 0.3em 0.3em rgba(8, 193, 193, 0.461);
+}
+.form form .conditions {
+  margin: 5% -1%;
+  text-align: left;
+  height: auto;
+  padding: 0.1em;
+}
+
+#conditions {
+  width: 2vw;
+  height: 2vh;
+  float: left;
+}
+
+.form form label {
+  margin: 2.5% auto;
+}
+
+.form form #submit {
+  background-color: rgb(8, 193, 193);
+  color: white;
+  height: 5vh;
+  font-size: 1em;
+  border-radius: 0.3em;
+}
+
+.form form #submit:hover {
+  opacity: 0.9;
+}
+
+.container button:hover {
+  opacity: 0.9;
+  outline: none;
+}
+
+.container .form form label input:hover {
+  border: 0.5em solid rgba(27, 239, 239, 0.888);
+}
+.container .form form label input::placeholder {
+  color: #454045;
+}
+@media (max-width: 750px) {
+  .container {
+    width: 95vw;
+    max-width: 95vw;
+    transition: width 0.6s;
+  }
+}
